@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:orange;
+            font-size:10vw ;
+        }
+        nav{
+            text-align: right;
+            display: none;
+            flex-direction: column;
+        }
+        nav a{
+            padding: 10px;
+            text-decoration: none;
+        }
+    
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin: auto;
+        }
+        form input,form button{
+            margin: auto;
+            margin-top: 10px;
+            width: 100%;
+            padding: 10px;
+            outline: 0;
+        }
+        form button{
+            background-color: orange;
+            color: #fff;
+            border: 0;
+        }
+        .ani1{
+            background-color: orange;
+            width: 200px;
+            height:200px;
+            animation-name: bg1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes bg1 {
+            0%{background-color: red;}
+            20%{background-color: blue;}
+            40%{background-color: yellow;}
+            60%{background-color:brown ;}
+            100%{background-color: black;}
+            
+        }
+        .spin{
+            border-radius: 100%;
+            background: transparent;
+            height: 30px;
+            width: 30px;
+            border-style: solid;
+            border-width: 4px;
+            border-color: blue;
+            border-bottom-color: white;
+            animation: spin 4s linear infinite;
+            position:absolute ;
+            top: 0;
+            left: 0;
+        }
+        @keyframes spin {
+            0%{
+                transform: rotate(0deg);
+                left: 0;
+            }
+            50%{
+                left:100%;
+            }
+            100%{
+                transform: rotate(360deg);
+                left: o;
+            }
+
+            
+        }
+
+        /* tablet design */
+
+        @media screen and (min-width: 450px) and (max-width:1024px) {
+            form{
+                width: 400px;
+            }
+            
+        }
+
+
+        @media screen and (min-width:768px) {
+            h1{
+                color: blue;
+                font-size: 100px;
+            }
+            nav{
+                display: flex;
+                text-align: left;
+                flex-direction: row;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1> Hello World!</h1>
+    <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">About</a>
+        <a href="">About</a>
+        <a href="">About</a>
+        <a href="">About</a>
+    </nav>
+    <section>
+        <form action="">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <button>Register</button>
+        </form>
+    </section>
+    <!-- background change animation -->
+     <div class="ani1"></div>
+     <div class="spin"></div>
+</body>
+</html>

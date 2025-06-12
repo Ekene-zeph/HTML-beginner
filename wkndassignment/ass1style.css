@@ -1,0 +1,40 @@
+.bod{
+    display: flex;
+    font-family: Georgia, Times, 'Times New Roman', serif ;
+    gap:40px;
+    align-items:center;
+}
+
+.background{
+    background-image:url(./imgwknd/iced-cofee-shot.jpg);
+    width: 900px;
+    height: 1000px;
+    background-size: cover;
+    position:relative ;
+    
+
+}
+
+.background>div{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    width:300px ;
+}
+.rhs{
+    position: relative;
+}
+
+.hed{
+    font-size: 40px;
+    background-color:white;
+    width:400px ;
+    position: absolute;
+    top: 150px;
+    left: 800px;
+    z-index: 5;
+}
+
